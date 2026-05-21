@@ -1,8 +1,10 @@
-import pandas as pd
 import streamlit as st
+import pandas as pd
+
 @st.cache_data
 def cargar_datos():
-    df = pd.read_excel("datos/NoFetal2019.xlsx")
-    divipola = pd.read_excel("datos/Divipola.xlsx")
-    causas = pd.read_excel("datos/CodigosDeMuerte.xlsx", skiprows=8)
+    # Añadimos la subcarpeta 'PF-Mortalidad' al inicio de cada ruta
+    df = pd.read_excel("PF-Mortalidad/datos/NoFetal2019.xlsx")
+    divipola = pd.read_excel("PF-Mortalidad/datos/Divipola.xlsx")
+    causas = pd.read_excel("PF-Mortalidad/datos/CodigosDeMuerte.xlsx", skiprows=8)
     return df, divipola, causas

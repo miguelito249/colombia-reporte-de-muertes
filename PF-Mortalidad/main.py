@@ -19,9 +19,6 @@ from vistas.Graficocircular import ciudades_menor_mortalidad
 
 # Cargar datos
 df, divipola, causas = cargar_datos()
-
-
-
 st.markdown("""
 <style>
 body {
