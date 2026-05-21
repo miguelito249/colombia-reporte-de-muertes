@@ -86,9 +86,9 @@ if opcion == "Inicio":
 
     st.info("Fuente: DANE")
     
-elif opcion == "📈 Total de muertes por mes":
+elif opcion == "Total de muertes por mes":
 
-    st.header("📈 Total de muertes por mes")
+    st.header("Total de muertes por mes")
     st.write("Evolución de la mortalidad durante el año.")
 
     st.markdown("---")
@@ -96,9 +96,9 @@ elif opcion == "📈 Total de muertes por mes":
     fig = grafico_lineas(df_filtrado)
     st.plotly_chart(fig, use_container_width=True)
 
-elif opcion == "🗺️ Total de muertes por departamento":
+elif opcion == "Total de muertes por departamento":
 
-    st.header("🗺️ Distribución geográfica")
+    st.header("Distribución geográfica")
     st.write("Muertes por departamento.")
 
     st.markdown("---")
